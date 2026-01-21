@@ -153,13 +153,13 @@ footer a {
   }
 
   .line {
-    width: 100%; 
+    width: 80%; 
   }
 
   .locker img {
     position: static;    
     display: block;      
-    margin: 40px auto 0;  
+    margin: 40px auto 60px;  
   }
 }
 
