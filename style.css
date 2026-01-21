@@ -1,114 +1,110 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
 
+body {
   background-color: #2f2e41;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; 
 }
 
 .page {
-  width: 1280px;
+  width: 1092px; 
+  max-width: 90%; 
   margin: 71px auto;
 }
 
+/* --- HEADER / NAV --- */
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 101px;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 ul {
   display: flex;
-  text-decoration: none;
   gap: 64px;
+  list-style: none; 
 }
 
-ul li {
-  text-decoration: none;
-}
 a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14;
+  font-size: 14px; 
   line-height: 28px;
-  font-style: normal;
   font-family: "JetBrains Mono", monospace;
 }
 
+/* --- MAIN CONTENT --- */
 main .container {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
+}
+
+
+main img {
+    max-width: 100%;
 }
 
 main .text {
   width: 604px;
-}
+  text-align: center; 
 
+/* --- TYPOGRAPHY --- */
 .container h1 {
-  display: flex;
   color: #ffffff;
-  gap: 5px;
   font-size: 36px;
   line-height: 40px;
   font-weight: bold;
   font-family: "JetBrains Mono", monospace;
+  margin-bottom: 59px; 
 }
+
 .container h1 span {
   color: #00bfa6;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: bold;
 }
 
 .container p {
   color: #c2c2c2;
   font-size: 16px;
   line-height: 28px;
-  margin-top: 59px;
-  padding: 0px auto;
-  text-align: center;
-  justify-content: center;
 }
 
-.container p span {
-  color: #00bfa6;
-  font-size: 16;
-  line-height: 28px;
-  font-weight: bold;
-}
-
+.container p span, 
 .container p strong {
-  color: #c2c2c2;
-  font-size: 16px;
-  line-height: 28px;
+  color: #00bfa6;
   font-weight: bold;
 }
 
+/* --- LINE & FOOTER --- */
 .line {
   width: 568px;
-  margin: 157px auto 0px;
-  border: 1px #00bfa6 solid;
-  margin-bottom: 27px;
+  border-top: 1px solid #00bfa6; 
+  margin: 100px auto 27px; /* Margem: Cima | Laterais | Baixo */
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ffffff;
-  margin-bottom: 77px;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
 }
 
 footer a {
-  gap: 5px;
+  font-weight: bold;
 }
 
 .locker img {
-  position: fixed;
-  margin-left: 20px;
+  position: fixed; 
+  bottom: 50px;    
+  left: 50px;      
+  width: 50px;     
 }
