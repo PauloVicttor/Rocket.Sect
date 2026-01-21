@@ -7,13 +7,17 @@
 body {
   background-color: #2f2e41;
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  min-height: 100vh; 
+  display: flex;     
+  flex-direction: column;
 }
 
 .page {
-  width: 1092px; 
-  max-width: 90%; 
+  width: 1092px;
+  max-width: 90%;
   margin: 71px auto;
+  flex-grow: 1; 
 }
 
 /* --- HEADER / NAV --- */
